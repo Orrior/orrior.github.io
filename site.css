@@ -89,3 +89,23 @@ a:hover{
     filter: drop-shadow(4px 4px 3px #07070b);
     z-index: -3;
 }
+.shapes2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .25s ease .65s;
+    filter: drop-shadow(4px 4px 3px #07070b);
+    z-index: -3;
+}
+.shapes3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: opacity .25s ease .65s;
+    filter: drop-shadow(4px 4px 3px #07070b);
+    z-index: -3;
+}
