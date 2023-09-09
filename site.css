@@ -82,6 +82,12 @@ a:hover{
     bottom: 0;
     margin-bottom: auto;
 }
+@keyframes floating{
+    0% { transform: translate(0,  0%); }
+    50%  { transform: translate(0, 3%); }
+    100%   { transform: translate(0, -0%); }
+}
+
 .shapes{
     position: absolute;
     top: 0;
@@ -91,6 +97,10 @@ a:hover{
     transition: opacity .25s ease .65s;
     filter: drop-shadow(4px 4px 3px #07070b);
     z-index: -3;
+    animation-name: floating;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 .shapes2{
     position: absolute;
@@ -101,6 +111,10 @@ a:hover{
     transition: opacity .25s ease .65s;
     filter: drop-shadow(4px 4px 3px #07070b);
     z-index: -3;
+    animation-name: floating;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 }
 .shapes3{
     position: absolute;
@@ -111,4 +125,27 @@ a:hover{
     transition: opacity .25s ease .65s;
     filter: drop-shadow(4px 4px 3px #07070b);
     z-index: -3;
+    animation-name: floating;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    visibility: hidden;
+
+    background-color: #18181c;
+    color: #fff;
+    text-align: center;
+    padding: 10px 15px;
+    border-radius: 6px;
+
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+}
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 90%;
 }
